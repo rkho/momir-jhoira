@@ -21,9 +21,12 @@ var momirjhoira = React.createClass({
     return (
       <View style={styles.container}>
         <NavigatorIOS
+          barTintColor='#AEB6B9'
+          titleTextColor='#696661'
+          style={styles.container}
           initialRoute={{
             component: Main,
-            title: 'Main'
+            title: 'Momir-Jhoira'
           }} />
       </View>
     );
@@ -33,20 +36,8 @@ var momirjhoira = React.createClass({
 var styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#848C92',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    backgroundColor: '#AEB6B9'
+  }
 });
 
 AppRegistry.registerComponent('momirjhoira', () => momirjhoira);

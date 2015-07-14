@@ -6,7 +6,24 @@ var {
 
 var styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    backgroundColor: '#AEB6B9',
+  },
+  header: {
+    marginTop: 75,
+    alignItems: 'center'
+  },
+  slider: {
+    height: 10,
+    width: 200
+  },
+  cmcText: {
+    marginTop: 20,
+    color: '#696661',
+    fontSize: 26
+  },
+  button: {
+    color: '#696661',
   }
 })
 
