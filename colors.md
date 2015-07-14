@@ -20,9 +20,9 @@ This is a slate gray color that could serve as the background. Alternate backgro
 + 5E809B: Prime Speaker medium blue
 + 242841: Prime Speaker dark blue
 + B8B9B3: Prime Speaker light shale
++ AEB6B9: Prime Speaker extra light slate
 + A4A198: Prime Speaker medium shale
 + 696661: Prime Speaker dark shale
-+ AEB6B9: Prime Speaker extra light slate
 + 4B766F: Prime Speaker medium aqua
 + 3E4D46: Prime Speaker dark green
 
