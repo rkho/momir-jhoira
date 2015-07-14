@@ -6,27 +6,29 @@ var Button = require('react-native-button');
 var {
   View,
   Text,
-  SliderIOS
+  SliderIOS,
 } = React;
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cmc: 0
+      cmc: 0,
+      historyCreatures: [],
+      historySpells: [],
     }
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.topBar}>
+        <View style={styles.header}>
           <SliderIOS
             style={styles.slider}
             minimumValue={0}
             maximumValue={15}
-            minimumTrackTintColor='#803633'
-            maximumTrackTintColor='#242841'
+            maximumTrackTintColor='#803633'
+            minimumTrackTintColor='#242841'
             onValueChange={(value) => {
               this.setState({
                 cmc: Math.floor(value)
@@ -36,12 +38,24 @@ class Main extends React.Component {
             {this.state.cmc}
           </Text>
           <Button style={styles.button}
-            onPress={this._handlePress}>
-            Generate!
+            onPress={() => this._handleMomirPress(this.state.cmc)}>
+            Momir
+          </Button>
+          <Button style={styles.button}
+            onPress={() => this._handleJhoiraPress(this.state.cmc)}>
+            Jhoira
           </Button>
         </View>
       </View>
       )
+  }
+
+  _handleMomirPress(value) {
+    console.log('hooray', value);
+  }
+
+  _handleJhoiraPress(value) {
+    console.log('jhoira!', value)
   }
 }
 
